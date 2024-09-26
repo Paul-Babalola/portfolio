@@ -9,6 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and site name */
+    vertical-align: middle; /* Aligns the logo with the text */
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
