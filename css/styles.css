@@ -16,6 +16,17 @@ html {
     vertical-align: middle; /* Aligns the logo with the text */
 }
 
+.self {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #7a7979; /* Creates a frame around the image */
+    padding: 5px; /* Adds spacing between the image and the frame */
+    box-sizing: border-box; /* Ensures padding doesn’t affect the width/height */
+    border-radius: 8px; /* Optional: adds rounded corners to the frame */
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
