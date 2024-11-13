@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paul Babalola | Front-End Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Modal for viewing images -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+    <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav>
+    <div class="container">
+        <h1>
+            <a href="#">
+                <img src="images/logo.png" alt="Paul Babalola Logo" class="logo">
+                Paul Babalola
+            </a>
+        </h1>
+        <br>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container1">
+            <h2>Hello, I'm Paul, a Front-End Developer</h2>
+            <p>I create beautiful, responsive web applications using modern technologies like Vue.js, React, and more.</p>
+            <a href="#projects" class="cta">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a front-end developer with experience in building responsive, visually appealing, and highly interactive web applications. I'm proficient in HTML, CSS, JavaScript, and frameworks like Vue.js and React.</p>
+           <br><br> <img src="images/paulbabs.jpg" alt="Paul Babalola" class="self">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" onclick="openModal('images/project1.jpeg')">
+                    <img src="images/project1.jpeg" alt="Project 1 Screenshot">
+                    <h3>Admin page (Discount List)</h3>
+<!--                     <p>A user-friendly admin interface for managing discount offers. This project allows administrators to view, add, edit, and delete discount records seamlessly, enhancing promotional management efficiency. Built with Vue.js, CSS, and JavaScript.</p> -->
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-card" onclick="openModal('images/project2.jpeg')">
+                    <img src="images/project2.jpeg" alt="Project 2 Screenshot">
+                    <h3>Admin Page (Plan List)</h3>
+<!--                     <p>An intuitive dashboard for administrators to manage subscription plans. Users can easily navigate through different plans, make updates, and manage plan features using Vue.js for a responsive design.</p> -->
+                </div>
+
+                <div class="project-card" onclick="openModal('images/project3.jpeg')">
+                    <img src="images/project3.jpeg" alt="Project 3 Screenshot">
+                    <h3>Request Dashboard</h3>
+<!--                     <p>A comprehensive request management system that enables users to submit and track requests efficiently. This project leverages PHP and CSS for a modern, responsive user experience that simplifies request handling.</p> -->
+                </div>
+
+                <div class="project-card" onclick="openModal('images/project4.jpeg')">
+                    <img src="images/project4.jpeg" alt="Project 4 Screenshot">
+                    <h3>Admin Creation</h3>
+<!--                     <p>A dynamic admin portal designed for creating admin user data. It features a clean and responsive layout built with PHP and CSS, allowing easy navigation and real-time updates.</p> -->
+                </div>
+
+                <div class="project-card" onclick="openModal('images/project5.jpeg')">
+                    <img src="images/project5.jpeg" alt="Project 2 Screenshot">
+                    <h3>Landing Page</h3>
+<!--                     <p>A visually appealing landing page designed to capture user interest and drive conversions. This project utilizes Vue.js and Tailwind CSS for a sleek, modern look, ensuring an engaging user experience across devices.</p> -->
+                </div>
+                <!-- More project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <h3>Vue.js</h3>
+                </div>
+                <div class="skill">
+                    <h3>React.js</h3>
+                </div>
+                <div class="skill">
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill">
+                    <h3>Git & GitHub</h3>
+                </div>
+                   <div class="skill">
+                    <h3>UI/UX</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xrbznbjw" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Paul Babalola. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
