@@ -9,6 +9,24 @@ html {
     scroll-behavior: smooth;
 }
 
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and site name */
+    vertical-align: middle; /* Aligns the logo with the text */
+}
+
+.self {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #7a7979; /* Creates a frame around the image */
+    padding: 5px; /* Adds spacing between the image and the frame */
+    box-sizing: border-box; /* Ensures padding doesn’t affect the width/height */
+    border-radius: 8px; /* Optional: adds rounded corners to the frame */
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -17,6 +35,12 @@ body {
 }
 
 .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.container1 {
     max-width: 1200px;
     margin: auto;
     padding: 0 2rem;
@@ -236,6 +260,7 @@ button {
     cursor: pointer;
 }
 
+
 button:hover {
     background-color: #c00;
 }
@@ -246,4 +271,62 @@ footer {
     padding: 1rem;
     color: #fff;
     text-align: center;
+}
+
+
+@media (max-width: 969px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta{
+        margin-top: -30px;
+    }
+
+    .container1{
+        margin-top: -60px;
+    }
+
+    .project-grid, .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets/mobiles */
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .skills-grid{
+        align-items: center;
+    }
+    
+    .project-grid{
+        width: 300%;
+        margin-left: 5%;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
