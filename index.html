@@ -5,99 +5,221 @@
     <link rel="icon" href="images/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paul Babalola | Front-End Developer</title>
+    <title>Paul Babalola | Software Engineer | Full-Stack | Applied AI</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Modal for viewing images -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <div id="caption"></div>
-</div>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <!-- Navigation Bar -->
-<!-- Navigation Bar -->
-<nav>
-    <div class="container">
-        <h1>
-            <a href="#">
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
                 <img src="images/logo.png" alt="Paul Babalola Logo" class="logo">
-                Paul Babalola
+                <span>Paul Babalola</span>
             </a>
-        </h1>
-        <br>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-grid"></div>
         <div class="container1">
-            <h2>Hello, I'm Paul, a Front-End Developer</h2>
-            <p>I create beautiful, responsive web applications using modern technologies like Vue.js, React, and more.</p>
-            <a href="#projects" class="cta">View Projects</a>
+            <div class="hero-badge">Available for opportunities</div>
+            <h1 class="hero-name">Paul Babalola</h1>
+            <h2 class="hero-title">Full-Stack Engineer <span class="hero-divider">&</span> Applied AI Researcher</h2>
+            <p class="hero-sub">Building production-grade applications at scale with React, TypeScript, Next.js, Python, and FastAPI. M.Eng in Applied AI @ University of Ottawa.</p>
+            <div class="hero-ctas">
+                <a href="#projects" class="cta">View Projects</a>
+                <a href="#contact" class="cta cta-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-links">
+                <a href="https://linkedin.com/in/paulbabalola" target="_blank" rel="noopener" class="hero-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/paulbabalola" target="_blank" rel="noopener" class="hero-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a front-end developer with experience in building responsive, visually appealing, and highly interactive web applications. I'm proficient in HTML, CSS, JavaScript, and frameworks like Vue.js and React.</p>
-           <br><br> <img src="images/paulbabs.jpg" alt="Paul Babalola" class="self">
+            <div class="section-header">
+                <span class="section-label">About</span>
+                <h2>Who I Am</h2>
+            </div>
+            <div class="about-content">
+                <img src="images/paulbabs.jpg" alt="Paul Babalola" class="self">
+                <div class="about-text">
+                    <p>Full-stack software engineer with production experience across fintech and enterprise telecom, shipping customer-facing applications at scale in React, TypeScript, Next.js, Python, and FastAPI. Proven record owning features end-to-end from Figma to deployment, integrating REST APIs, managing relational databases (MySQL, Supabase/PostgreSQL), and driving performance improvements across front-end and back-end systems.</p>
+                    <p>Currently completing an M.Eng in Applied AI at the University of Ottawa, applying reinforcement learning to real-world infrastructure problems benchmarked against professionally engineered controllers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Experience</span>
+                <h2>Where I've Worked</h2>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2026 – Present</div>
+                    <div class="timeline-content">
+                        <h3>AI Trainer</h3>
+                        <h4>Outlier &middot; Remote</h4>
+                        <ul>
+                            <li>Evaluate and improve AI-generated code and reasoning outputs, providing structured feedback to improve model accuracy, code quality, and instruction-following across software engineering tasks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2025 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Full-Stack Developer</h3>
+                        <h4>Payaza &middot; Remote</h4>
+                        <ul>
+                            <li>Shipped africatech.academy end-to-end as the sole front-end engineer, building a production financial education platform in React, TypeScript, Tailwind CSS, and Ant Design.</li>
+                            <li>Cut feature development time by 20% by building a reusable component system from Figma designs and tightening handoff conventions with backend engineers.</li>
+                            <li>Reduced UI defects by 30% through cross-browser testing patterns, accessibility checks, and stricter code-review standards.</li>
+                            <li>Built Compass, an internal analytics dashboard surfacing real-time metrics across transaction volume, merchant health, success/failure rates, and revenue.</li>
+                            <li>Managed Supabase backend including database schema design, row-level security configuration, and real-time data integration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Board Advisor</h3>
+                        <h4>Dauntless Coaching Company &middot; Remote</h4>
+                        <ul>
+                            <li>Serve on the advisory board, providing strategic direction on technology adoption, digital growth, and operational planning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2024 – Nov 2024</div>
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <h4>IpNX Nigeria &middot; Hybrid</h4>
+                        <ul>
+                            <li>Engineered 4–5 production applications for IpNX's enterprise telecom suite in Vue.js and React, spanning customer-facing and internal platforms used by B2B clients and operations teams.</li>
+                            <li>Built a customer-facing FOS sales portal with plan browsing, subscription flows, and agent management, enabling B2B clients to self-serve across residential and SME connectivity plans.</li>
+                            <li>Developed an admin management portal with role-based access control, plan configuration (pricing, speed tiers, data allowance), and agent oversight.</li>
+                            <li>Built an internal Service Request Portal enabling staff to submit, track, and manage project approvals with real-time status tracking and multi-role admin workflows.</li>
+                            <li>Developed backend services using FastAPI and MySQL; built a reusable UI component library adopted across 4+ internal projects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-label">Projects</span>
+                <h2>What I've Built</h2>
+            </div>
             <div class="project-grid">
-                <!-- Project Card 1 -->
-                <!-- <div class="project-card" onclick="openModal('images/project1.jpeg')">
-                    <img src="images/project1.jpeg" alt="Project 1 Screenshot">
-                    <h3>Admin page (Discount List)</h3>
-                    <p>A user-friendly admin interface for managing discount offers. This project allows administrators to view, add, edit, and delete discount records seamlessly, enhancing promotional management efficiency. Built with Vue.js, CSS, and JavaScript.</p>
-                </div>
-                 -->
-                <!-- Project Card 2 -->
-                <div class="project-card" onclick="openModal('images/project2.jpeg')">
-                    <img src="images/project2.jpeg" alt="Project 2 Screenshot">
-                    <h3>Admin Page (Plan List)</h3>
-<!--                     <p>An intuitive dashboard for administrators to manage subscription plans. Users can easily navigate through different plans, make updates, and manage plan features using Vue.js for a responsive design.</p> -->
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Fintax</h3>
+                        <span class="project-date">2026 – Present</span>
+                    </div>
+                    <p class="project-desc">Personal Finance &amp; Tax SaaS — full-stack application for Nigerian professionals built in Next.js, TypeScript, Supabase, and Tailwind CSS. Integrated Anthropic Vision API for automated receipt extraction and Resend for transactional email.</p>
+                    <div class="project-tags">
+                        <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Tailwind</span><span>Anthropic API</span>
+                    </div>
                 </div>
 
-                <div class="project-card" onclick="openModal('images/patientpics.png')">
-                    <img src="images/patientpics.png" alt="Project Patient Details">
-                    <h3>Patient Details</h3>
-<!--                     <p>A visually appealing landing page designed to capture user interest and drive conversions. This project utilizes Vue.js and Tailwind CSS for a sleek, modern look, ensuring an engaging user experience across devices.</p> -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Africa Tech Academy LMS</h3>
+                        <span class="project-date">2025 – Present</span>
+                    </div>
+                    <p class="project-desc">Co-built a full-stack learning management system in React, TypeScript, Next.js, and Supabase for technology training delivery across Africa. Designed a multipart AWS S3 upload pipeline for large course media and shipped an applicant portal with resume upload and review flows.</p>
+                    <div class="project-tags">
+                        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>AWS S3</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>V2I Adaptive Traffic Signal Control</h3>
+                        <span class="project-date">2026</span>
+                    </div>
+                    <p class="project-desc">Developed the DWQP-ASC adaptive signal control algorithm in Python, SUMO, and TraCI for a real Ottawa intersection (Merivale Rd. and West Hunt Club Rd.), achieving 42% delay reduction over the fixed-time baseline — within 4.4% of a professionally engineered actuated controller.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>SUMO</span><span>TraCI</span><span>Reinforcement Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('images/project2.jpeg')">
+                    <img src="images/project2.jpeg" alt="Admin Plan List">
+                    <div class="project-header">
+                        <h3>Admin Page (Plan List)</h3>
+                        <span class="project-date">IpNX</span>
+                    </div>
+                    <p class="project-desc">Admin dashboard for managing subscription plans — built with Vue.js for IpNX's internal operations team.</p>
+                    <div class="project-tags">
+                        <span>Vue.js</span><span>JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="project-card" onclick="openModal('images/project3.jpeg')">
-                    <img src="images/project3.jpeg" alt="Project 3 Screenshot">
-                    <h3>Request Dashboard</h3>
-<!--                     <p>A comprehensive request management system that enables users to submit and track requests efficiently. This project leverages PHP and CSS for a modern, responsive user experience that simplifies request handling.</p> -->
-                </div>
-
-                <div class="project-card" onclick="openModal('images/project4.jpeg')">
-                    <img src="images/project4.jpeg" alt="Project 4 Screenshot">
-                    <h3>Admin Creation</h3>
-<!--                     <p>A dynamic admin portal designed for creating admin user data. It features a clean and responsive layout built with PHP and CSS, allowing easy navigation and real-time updates.</p> -->
+                    <img src="images/project3.jpeg" alt="Request Dashboard">
+                    <div class="project-header">
+                        <h3>Service Request Dashboard</h3>
+                        <span class="project-date">IpNX</span>
+                    </div>
+                    <p class="project-desc">Internal request management portal enabling staff to submit, track, and manage project approvals with real-time status tracking (pending, approved, completed) and multi-role admin workflows.</p>
+                    <div class="project-tags">
+                        <span>React</span><span>FastAPI</span><span>MySQL</span>
+                    </div>
                 </div>
 
                 <div class="project-card" onclick="openModal('images/project5.jpeg')">
-                    <img src="images/project5.jpeg" alt="Project 2 Screenshot">
-                    <h3>Landing Page</h3>
-<!--                     <p>A visually appealing landing page designed to capture user interest and drive conversions. This project utilizes Vue.js and Tailwind CSS for a sleek, modern look, ensuring an engaging user experience across devices.</p> -->
+                    <img src="images/project5.jpeg" alt="Landing Page">
+                    <div class="project-header">
+                        <h3>FOS Sales Portal</h3>
+                        <span class="project-date">IpNX</span>
+                    </div>
+                    <p class="project-desc">Customer-facing sales portal with plan browsing, subscription flows, and agent management — enabling B2B clients to self-serve across residential and SME connectivity plans.</p>
+                    <div class="project-tags">
+                        <span>Vue.js</span><span>Nuxt 3</span><span>Tailwind CSS</span>
+                    </div>
                 </div>
-                <!-- More project cards as needed -->
+
             </div>
         </div>
     </section>
@@ -105,28 +227,115 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <h3>HTML & CSS</h3>
+            <div class="section-header">
+                <span class="section-label">Skills</span>
+                <h2>Tech Stack</h2>
+            </div>
+            <div class="skills-categories">
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>MySQL</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>HTML5</span>
+                        <span>CSS3 / SASS</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
+
+                <div class="skill-category">
+                    <h3>Frameworks &amp; Libraries</h3>
+                    <div class="skill-tags">
+                        <span>React.js</span>
+                        <span>Next.js</span>
+                        <span>Vue.js</span>
+                        <span>Nuxt 3</span>
+                        <span>Node.js</span>
+                        <span>FastAPI</span>
+                        <span>Tailwind CSS</span>
+                        <span>Ant Design</span>
+                        <span>REST / OpenAPI</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h3>Vue.js</h3>
+
+                <div class="skill-category">
+                    <h3>Cloud &amp; DevOps</h3>
+                    <div class="skill-tags">
+                        <span>AWS (S3)</span>
+                        <span>Supabase</span>
+                        <span>Firebase</span>
+                        <span>Vercel</span>
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>CI/CD (Jenkins, GitLab CI)</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h3>React.js</h3>
+
+                <div class="skill-category">
+                    <h3>AI / ML</h3>
+                    <div class="skill-tags">
+                        <span>JAX</span>
+                        <span>Brax</span>
+                        <span>Reinforcement Learning (PPO, SAC, DQN)</span>
+                        <span>SUMO / TraCI</span>
+                        <span>Anthropic Vision API</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h3>Node.js</h3>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Education</span>
+                <h2>Academic Background</h2>
+            </div>
+            <div class="education-grid">
+
+                <div class="education-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-details">
+                        <h3>University of Ottawa</h3>
+                        <p class="edu-degree">M.Eng, Electrical and Computer Engineering (Applied Artificial Intelligence)</p>
+                        <p class="edu-meta">Ottawa, Canada &middot; Jan 2026 – Jun 2027</p>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h3>Git & GitHub</h3>
+
+                <div class="education-card">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-details">
+                        <h3>Covenant University</h3>
+                        <p class="edu-degree">B.Eng., Electrical and Electronics Engineering</p>
+                        <p class="edu-meta">Ogun, Nigeria &middot; Aug 2018 – Aug 2023</p>
+                    </div>
                 </div>
-                   <div class="skill">
-                    <h3>UI/UX</h3>
+
+            </div>
+
+            <h3 class="section-sub">Academic Projects</h3>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="edu-details">
+                        <h3>Deep RL Benchmarking: PPO vs. SAC</h3>
+                        <p class="edu-degree">Compared PPO and SAC policies under massively parallel Brax simulation on the University of Ottawa's H100 GPU cluster; co-authored an IEEE-format final report with reward shaping and entropy-tuning ablations.</p>
+                        <p class="edu-meta">M.Eng Coursework &middot; 2026 &middot; Graded 93/100</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-details">
+                        <h3>V2I Adaptive Traffic Signal Control</h3>
+                        <p class="edu-degree">Developed the DWQP-ASC algorithm in Python/SUMO/TraCI for a real Ottawa intersection, achieving 42% delay reduction over fixed-time baseline across 5 simulation seeds — within 4.4% of a professionally engineered actuated controller.</p>
+                        <p class="edu-meta">Engineering Design &middot; 2026</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,21 +344,29 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2>Get In Touch</h2>
+                <p>Open to full-time roles, freelance projects, and research collaborations.</p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:babalola.t.paul@gmail.com">babalola.t.paul@gmail.com</a>
+                <a href="https://linkedin.com/in/paulbabalola" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/paulbabalola" target="_blank" rel="noopener">GitHub</a>
+            </div>
             <form action="https://formspree.io/f/xrbznbjw" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
-            
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2024 Paul Babalola. All Rights Reserved.</p>
+            <p>© 2026 Paul Babalola. All Rights Reserved.</p>
         </div>
     </footer>
     <script src="js/script.js"></script>
