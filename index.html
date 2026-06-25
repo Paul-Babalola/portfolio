@@ -10,10 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Modal for viewing images -->
+    <!-- Modal for viewing images / video -->
     <div id="imageModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
+        <button class="modal-nav modal-prev" id="modalPrev" onclick="modalNavigate(-1)" style="display:none">&#8249;</button>
         <img class="modal-content" id="modalImage">
+        <video class="modal-content" id="modalVideo" controls loop muted style="display:none"></video>
+        <iframe class="modal-content" id="modalYoutube" frameborder="0" allowfullscreen allow="autoplay; encrypted-media" style="display:none"></iframe>
+        <button class="modal-nav modal-next" id="modalNext" onclick="modalNavigate(1)" style="display:none">&#8250;</button>
         <div id="caption"></div>
     </div>
 
@@ -39,7 +43,6 @@
     <section class="hero">
         <div class="hero-bg-grid"></div>
         <div class="container1">
-            <div class="hero-badge">Available for opportunities</div>
             <h1 class="hero-name">Paul Babalola</h1>
             <h2 class="hero-title">Full-Stack Engineer <span class="hero-divider">&</span> Applied AI Researcher</h2>
             <p class="hero-sub">Building production-grade applications at scale with React, TypeScript, Next.js, Python, and FastAPI. M.Eng in Applied AI @ University of Ottawa.</p>
@@ -48,11 +51,11 @@
                 <a href="#contact" class="cta cta-secondary">Get In Touch</a>
             </div>
             <div class="hero-links">
-                <a href="https://linkedin.com/in/paulbabalola" target="_blank" rel="noopener" class="hero-link">
+                <a href="https://www.linkedin.com/in/paulbabalola/" target="_blank" rel="noopener" class="hero-link">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
                     LinkedIn
                 </a>
-                <a href="https://github.com/paulbabalola" target="_blank" rel="noopener" class="hero-link">
+                <a href="https://github.com/Paul-Babalola" target="_blank" rel="noopener" class="hero-link">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                     GitHub
                 </a>
@@ -152,17 +155,20 @@
             <div class="project-grid">
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Fintax</h3>
-                        <span class="project-date">2026 – Present</span>
+                    <div class="img-carousel" data-carousel>
+                        <img src="images/ATA1.png" alt="Africa Tech Academy LMS screenshot 1" class="carousel-slide active">
+                        <img src="images/ATA2.png" alt="Africa Tech Academy LMS screenshot 2" class="carousel-slide">
+                        <img src="images/ATA3.png" alt="Africa Tech Academy LMS screenshot 3" class="carousel-slide">
+                        <img src="images/ATA4.png" alt="Africa Tech Academy LMS screenshot 4" class="carousel-slide">
+                        <img src="images/ATA5.png" alt="Africa Tech Academy LMS screenshot 5" class="carousel-slide">
+                        <div class="carousel-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                            <span class="dot" data-index="4"></span>
+                        </div>
                     </div>
-                    <p class="project-desc">Personal Finance &amp; Tax SaaS — full-stack application for Nigerian professionals built in Next.js, TypeScript, Supabase, and Tailwind CSS. Integrated Anthropic Vision API for automated receipt extraction and Resend for transactional email.</p>
-                    <div class="project-tags">
-                        <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Tailwind</span><span>Anthropic API</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
                     <div class="project-header">
                         <h3>Africa Tech Academy LMS</h3>
                         <span class="project-date">2025 – Present</span>
@@ -171,9 +177,21 @@
                     <div class="project-tags">
                         <span>React</span><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>AWS S3</span>
                     </div>
+                    <div class="project-links">
+                        <a href="https://africatech.academy/" target="_blank" rel="noopener" class="project-link">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Live
+                        </a>
+                    </div>
                 </div>
 
                 <div class="project-card">
+                    <div class="yt-preview" onclick="openModal('0k_Cs-ksVUw', 'youtube')">
+                        <iframe src="https://www.youtube.com/embed/0k_Cs-ksVUw?autoplay=1&mute=1&loop=1&playlist=0k_Cs-ksVUw&controls=0&modestbranding=1&rel=0" class="project-video" frameborder="0" allow="autoplay; encrypted-media" tabindex="-1"></iframe>
+                        <div class="yt-play-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
                     <div class="project-header">
                         <h3>V2I Adaptive Traffic Signal Control</h3>
                         <span class="project-date">2026</span>
@@ -194,6 +212,9 @@
                     <div class="project-tags">
                         <span>Vue.js</span><span>JavaScript</span>
                     </div>
+                    <div class="project-links">
+                        <span class="project-link-private">Internal tool — no public link</span>
+                    </div>
                 </div>
 
                 <div class="project-card" onclick="openModal('images/project3.jpeg')">
@@ -206,6 +227,9 @@
                     <div class="project-tags">
                         <span>React</span><span>FastAPI</span><span>MySQL</span>
                     </div>
+                    <div class="project-links">
+                        <span class="project-link-private">Internal tool — no public link</span>
+                    </div>
                 </div>
 
                 <div class="project-card" onclick="openModal('images/project5.jpeg')">
@@ -217,6 +241,9 @@
                     <p class="project-desc">Customer-facing sales portal with plan browsing, subscription flows, and agent management — enabling B2B clients to self-serve across residential and SME connectivity plans.</p>
                     <div class="project-tags">
                         <span>Vue.js</span><span>Nuxt 3</span><span>Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link-private">Internal tool — no public link</span>
                     </div>
                 </div>
 
@@ -350,9 +377,12 @@
                 <p>Open to full-time roles, freelance projects, and research collaborations.</p>
             </div>
             <div class="contact-links">
-                <a href="mailto:babalola.t.paul@gmail.com">babalola.t.paul@gmail.com</a>
-                <a href="https://linkedin.com/in/paulbabalola" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://github.com/paulbabalola" target="_blank" rel="noopener">GitHub</a>
+                <button class="email-copy" id="emailCopyBtn" onclick="copyEmail()">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                    <span id="emailText">babalola.t.paul@gmail.com</span>
+                </button>
+                <a href="https://www.linkedin.com/in/paulbabalola/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/Paul-Babalola" target="_blank" rel="noopener">GitHub</a>
             </div>
             <form action="https://formspree.io/f/xrbznbjw" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
